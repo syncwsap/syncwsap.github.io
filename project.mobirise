@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-16 11:39",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://syncwsap.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://syncwsap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "siqa4fnqtt",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SyncSwap™ | Home Official Site",
+        "meta_descr": "WebTrade. Pools. Positions. Launch. Rewards. Portfolio. Bridge. ETH. Powered by zero-knowledge technology, SyncSwap brings more people easy-to-use and low-cost DeFi with …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://syncswap.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/syncswap.png\" alt=\"SyncSwap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u1vhhn6yrh",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://syncswap.xyz/\" class=\"text-primary\">SyncSwap</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Unveiling the Potential of <a href=\"https://syncwsap.github.io/\" class=\"text-primary\">SyncSwap</a> Trade: Navigating the Dynamics of a New Trading Frontier</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of financial markets, SyncSwap Trade has emerged as a noteworthy player, capturing the attention of traders and investors seeking innovative solutions. This article aims to explore the intricacies of SyncSwap Trade, shedding light on its origins, features, and the potential it holds for reshaping the dynamics of the trading world.\n<br>\n<br>The Genesis of <a href=\"https://syncwsap.github.io/\" class=\"text-primary\">SyncSwap</a> Trade:\n<br>\n<br><a href=\"https://syncwsap.github.io/\" class=\"text-primary\">SyncSwap</a> Trade comes into focus at a time when the financial industry is experiencing a transformative shift, driven by advancements in technology and a growing appetite for alternative trading solutions. Founded by a team of visionaries with deep expertise in finance and technology, SyncSwap Trade aims to carve a niche in the trading landscape by offering a platform that combines cutting-edge technology with user-friendly features.\n<br>\n<br>Key Features of <a href=\"https://syncwsap.github.io/\" class=\"text-primary\">SyncSwap</a> Trade:\n<br>\n<br>Intuitive User Interface:\n<br>SyncSwap Trade prides itself on providing an intuitive and user-friendly interface, catering to both seasoned traders and those new to the world of financial markets. The platform's design emphasizes accessibility, making it easy for users to navigate and execute trades efficiently.\n<br>\n<br>Advanced Trading Tools:\n<br>The platform is equipped with a suite of advanced trading tools designed to empower users with the insights and analytics needed for informed decision-making. These tools may include real-time market data, technical analysis indicators, and customizable charts to aid traders in their strategies.\n<br>\n<br>Secure Trading Environment:\n<br>Security is a top priority in the world of online trading, and SyncSwap Trade addresses this concern by implementing robust security measures. This includes secure login protocols, encryption technologies, and regular security audits to ensure the protection of user data and assets.\n<br>\n<br>Diverse Asset Coverage:\n<br><a href=\"https://syncwsap.github.io/\" class=\"text-primary\">SyncSwap</a> Trade is designed to offer a diverse range of tradable assets, catering to the preferences of a wide user base. Whether users are interested in stocks, cryptocurrencies, forex, or commodities, SyncSwap Trade aims to provide a comprehensive selection of assets to trade.\n<br>\n<br>Innovative Trading Pairs:\n<br>The platform may introduce innovative trading pairs, allowing users to explore unique opportunities beyond conventional pairs. This could include pairs based on specific themes, industries, or emerging market trends, providing traders with a dynamic and diverse trading experience.\n<br>\n<br>SyncSwap Trade in the Decentralized Finance (DeFi) Landscape:\n<br>\n<br>As decentralized finance gains traction, SyncSwap Trade positions itself at the intersection of traditional finance and the decentralized realm. The platform may integrate decentralized trading features, allowing users to tap into the benefits of DeFi such as peer-to-peer trading, liquidity provision, and decentralized exchanges.\n<br>\n<br>Partnerships and Collaborations:\n<br>\n<br>SyncSwap Trade understands the importance of collaboration in the dynamic world of finance. By forging partnerships with other financial institutions, technology providers, or industry experts, SyncSwap Trade aims to enhance its offerings and provide users with access to a broader range of services. These collaborations could lead to joint ventures, integrations, or innovative financial products.\n<br>\n<br>Regulatory Compliance:\n<br>\n<br>In an industry marked by regulatory scrutiny, SyncSwap Trade is committed to adhering to legal and compliance standards. The platform collaborates with regulatory bodies to ensure that its operations align with industry regulations. This commitment not only ensures the platform's legitimacy but also instills confidence among users.\n<br>\n<br>Challenges and Criticisms:\n<br>\n<br>Despite its ambitious goals, SyncSwap Trade is not immune to challenges and criticisms. The dynamic nature of financial markets, regulatory uncertainties, and potential security risks are among the concerns raised by skeptics. The platform's ability to address these challenges will be critical in establishing its credibility and gaining the trust of the trading community.\n<br>\n<br>Conclusion:\n<br>\n<br>As SyncSwap Trade takes its place in the realm of online trading, it represents a convergence of traditional finance and technological innovation. The platform's commitment to user-friendly interfaces, advanced trading tools, and security positions it as a contender in the competitive trading landscape. The integration of decentralized finance features adds an extra layer of innovation, catering to the evolving preferences of modern traders. However, the journey ahead is not without challenges, and how SyncSwap Trade navigates these hurdles will ultimately determine its impact on the trading world. As traders continue to seek innovative solutions, SyncSwap Trade stands as a potential trailblazer in the quest for a new era of dynamic and accessible trading platforms.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u1vhikh0DU",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
